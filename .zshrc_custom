@@ -1,0 +1,40 @@
+alias ga="git add."
+alias gs="git status"
+alias gpsh="git push"
+alias gpll="git pull"
+alias py="python3"
+alias countlines="find . -name '*.js' | xargs wc -l"
+alias showalias="cat ~/.zshrc_custom"
+alias nrd="npm run dev"
+alias nt="npm test"
+alias ntnl="npm run test:nolint"
+alias dcud="docker-compose up -d"
+alias pushdotfiles="~/scripts/dotfiles.sh"
+
+openports () {
+  lsof -nP -iTCP:$1 | grep LISTEN
+}
+
+cm () {
+  git commit -m $1
+}
+
+gchk () {
+  git checkout $1
+}
+
+gchkb () {
+  git checkout -b $1
+}
+
+gpr () {
+  git push --set-upstream origin $1
+}
+
+happcfg () {
+  heroku config -a $1 -s > .env
+}
+
+tren () {
+  travis encrypt $1
+}
