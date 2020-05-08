@@ -10,6 +10,7 @@ alias nt="npm test"
 alias ntnl="npm run test:nolint"
 alias dcud="docker-compose up -d"
 alias pushdotfiles="~/scripts/dotfiles.sh"
+alias bootstrapproject="~/scripts/bootstrap_project.sh"
 
 openports () {
   lsof -nP -iTCP:$1 | grep LISTEN
