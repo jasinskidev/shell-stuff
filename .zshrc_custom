@@ -16,6 +16,8 @@ alias grbom="git rebase origin/master"
 alias projects="cd ~/Documents/Projects"
 alias desktop="cd ~/Desktop"
 alias cl="clear"
+alias nrf="npm run refactor"
+alias nps="npm start"
 
 herokussh () {
   heroku ps:exec --app=$1
